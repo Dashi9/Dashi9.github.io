@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Belajar JavaScript</title>
+        <link rel="icon" type="image/x-icon" href="JS.png">
+        <!--SCRIPT JS BERADA DI HEAD-->
+        <script>
+            function Merubah() {
+                document.getElementById("Berubah").innerHTML="Paragraf sudah berubah";
+            }
+        </script>
+        <link rel="stylesheet" href="design.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Belajar Membuat Web">
+        <meta name="keywords" content="Membuat Web">
+        <meta name="author" content="Dimas Aydan">
+        <meta name="viewport" content="width = device-width">
+    </head>
+    <body>
+        <div id="Div1">
+            <h1>Belajar JavaScript</h1>
+            <p>Belajar membuat web</p>
+        </div>
+        
+        <div class="script">
+            <div id="Tes1">
+                <!--SCRIPT JAVASCRIPT BERADA DALAM BODY-->
+                <p id="waktu"></p>
+                <button type="button" onclick="document.getElementById('waktu').innerHTML=Date()">Menampilkan waktu</button>
+            </div>
+            <div id="Tes2">
+                <!--SCRIPT JAVASCRIPT TERDAPAT DI HEAD-->
+                <p id="Berubah"; id="Kembali">Paragraf awal</p>
+                <button type="button" onclick="Merubah()">Pencet untuk merubah!</button>
+            </div>
+            <div id="Tes3">
+                <!--SCRIPT JAVASCRIPT EXTERNAL-->
+                <p>Berapakah hasil dari 10+2?</p>
+                <button type="button" onclick="Notif()">Melihat jawaban!</button>
+                <script src="script.js"></script>
+            </div>
+        </div>
+        <div class="flex-container"> 
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div>
+            <footer>
+                <p>Kontak</p>
+                <a rel="noopener"  href="https://www.youtube.com" target="_blank">Youtube</a>
+                <a rel="noopener" href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="mailto:dimasmagiceye@gmail.com" target="_blank">Gmail</a>
+            </footer>
+        </div>
+    </body>
+</html>
